@@ -1,0 +1,63 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: capitalize;
+    background-color: #b08968;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.parent {
+    background-color: #eee;
+}
+
+:root {
+    --main-color: #866043;
+    --second-color: #ede0d4;
+    --padding: 90px;
+}
+.login{
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--second-color);
+}
+.login img{
+    width: 150px;
+    height: 150px;
+    left: 30%;
+    padding-top: 100p;
+    top: -30%;
+    position: absolute;
+}
+.login form{
+    padding: 10px;
+}    
+.login form .email{
+    margin-top: 15px;
+}
+.login form input{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 350px;
+    background-color: var(--second-color);
+}
+.login form .sub{
+    width: 370px;
+    margin-top: 42px;
+    padding: 20px;
+    color: #866043;
+    cursor: pointer;
+    font-weight: bold;
+}
+.login p,a{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--second-color);
+}

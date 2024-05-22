@@ -1,0 +1,92 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: capitalize;
+    background-color: #b08968;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.parent {
+    background-color: #eee;
+}
+
+:root {
+    --main-color: #866043;
+    --second-color: #ede0d4;
+    --padding: 90px;
+}
+
+.lost {
+    position: absolute;
+    top: 50%;
+    margin-top: 100px;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: var(--second-color);
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--second-color);
+    padding: 50px;
+}
+
+.lost form {
+    padding: 10px;
+}
+
+.lost form .email {
+    margin-top: 10px;
+}
+
+.lost form input {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 350px;
+    outline: none;
+    background-color: var(--second-color);
+}
+.lost form input::placeholder{
+    color: var(--main-color);
+}
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 350px;
+    color: var(--main-color);
+    outline: none;
+    background-color: var(--second-color);
+}
+.lost form .sub {
+    width: 370px;
+    margin-top: 42px;
+    padding: 20px;
+    color: #866043;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.lost form select{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--main-color);
+    border: none;
+    width: 370px;
+    outline: none;
+    background-color: var(--second-color);
+}

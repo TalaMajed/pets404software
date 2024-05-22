@@ -1,0 +1,265 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.parent {
+    background-color: #eee;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+:root {
+    --main-color: #866043;
+    --second-color: #ede0d4;
+    --padding: 90px;
+}
+
+.special-heading {
+    letter-spacing: -2px;
+    text-align: center;
+    font-size: 60px;
+    color: var(--second-color);
+    font-weight: 800;
+}
+
+.special-heading+p {
+    text-align: center;
+    margin-top: -70px;
+    color: var(--main-color);
+    font-size: 15px;
+}
+
+@media (max-width:767px) {
+    .special-heading {
+        font-size: 60px;
+    }
+
+    .special-heading+p {
+        font-size: 13px;
+        margin-top: -70px;
+    }
+}
+
+.container {
+    padding-left: 15px;
+    /* padding-top: 10px; */
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 600px; */
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* start of the header */
+hr {
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 30px 0px !important;
+}
+
+a{
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+}
+
+.header .container .logo {
+    width: 100px;
+    z-index: -1;
+    /* position: absolute; */
+    /* top: 0; */
+}
+
+.header .nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.header .nav .lost {
+    padding-right: 45px;
+}
+
+.header .nav .lost a {
+    text-decoration: none;
+    background-color: var(--main-color);
+    padding: 10px;
+    color: var(--second-color);
+}
+
+.header .nav .found a {
+    color: black;
+    text-decoration: none;
+}
+
+.type ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    width: 90%;
+    display: flex;
+    margin: 30px;
+}
+
+.type ul li {
+    border: var(--main-color) 1px solid;
+    padding: 5px 20px;
+    border-radius: 17px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.type ul li img {
+    width: 30px;
+    height: 30px;
+    padding-right: 8px;
+    border-radius: 50%;
+}
+
+.type ul .selected {
+    background-color: var(--main-color) !important;
+    color: var(--second-color);
+    padding: -2px 12px;
+    width: 21% !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.type ul i {
+    margin-left: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    margin: 100px 50px;
+}
+
+.cards,
+.card {
+    padding: 20px;
+    border: 2px solid var(--main-color);
+    text-align: center;
+    height: 330px;
+    border-radius: 30px;
+}
+.card{
+    background-color: var(--main-color);
+}
+.card i {
+    color: var(--second-color);
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.card h3 {
+    color: var(--second-color);
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 10px;
+    color: var(--second-color);
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: var(--second-color);
+    padding: 6px 22px;
+    color: var(--main-color);
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.cards img {
+    width: 100%;
+    height: 95px;
+    border-radius: 10px;
+}
+
+.cards .info {
+    text-align: left;
+    margin-top: -20px;
+}
+
+.cards .info h5 {
+    color: var(--main-color);
+    font-size: 15px;
+}
+
+.cards .info i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.cards .info p {
+    color: #91613d;
+    font-size: 14px;
+    margin-left: 28px;
+    margin-top: -20px;
+}
+input{
+    text-align: right;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    border: none;
+    padding: 4px 7px;
+    border-radius: 3px;
+}
+.sub{
+    font-size: 11px;
+    cursor: pointer;
+}
