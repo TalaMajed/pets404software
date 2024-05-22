@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found Pets</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="for css/found.css">
+    <!-- css font items -->
+    <link rel="stylesheet" href="for css/all.min.css">
+    <!-- css normlize file -->
+    <link rel="stylesheet" href="for css/normlize.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <p>Report Found Pet Information</p>
+    <div class="lost">
+        <form action="foundcats.html">
+            <div class="email">
+                type<br>
+                <!-- <input type="text" placeholder=" Type"> -->
+                <select name="type" id="type">
+                    <option value="" disabled selected>Type</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Bird">Bird</option>
+                    <option value="Rabbit">Rabbit</option>
+                    <option value="Hamsters">Hamsters</option>
+                </select>
+            </div>
+            <div class="email">
+                breed<br>
+                <select name="breed" id="breed">
+                    <option value="" disabled selected>Breed</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="German-Shepherd">German Shepherd</option>
+                    <option value="Golden-Retriever">Golden Retriever</option>
+                    <option value="Husky">Husky</option>
+                    <option value="Bulldog">Bulldog</option>
+                </select>
+            </div>
+            <div class="email">
+                <i class='fa-solid fa-location-dot'></i>
+                last seen<br>
+                <a href="location2.png"><input type="text" placeholder="Last Seen In"></a>
+            </div>
+            <div class="email .custom-file-upload ">
+                Photos<br>
+                <label for="file-upload" class="custom-file-upload">
+                    Custom Upload
+                </label>
+                <input id="file-upload" type="file" />
+                <!-- photos<br>
+                <input type="file" placeholder="Select A File">
+            </div>-->
+                <input type="submit" value="Add Missing Pet" class="sub">
+        </form>
+    </div>
+</body>
+
+</html>
